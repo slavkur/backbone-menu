@@ -1,0 +1,10 @@
+<div class="menu">
+  <input class="name" type="text" placeholder="Введите название блюда" />
+  <input class="price" type="number" maxlength="4" placeholder="Цена" />р.
+  <button class="add-item" disabled>Добавить</button>
+  <div class="items">
+    {{#each items}}
+    <div class="item">{{{ link id name }}} {{ price }}р.</div>
+    {{/each}}
+  </div>
+</div>
